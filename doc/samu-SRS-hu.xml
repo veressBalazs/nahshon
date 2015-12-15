@@ -33,6 +33,12 @@
                 </otheraddr>
             </address>
         </author>
+         <author>
+            <personname>
+                <surname>Veress</surname>
+                <firstname>Balázs</firstname>        
+            </personname>    
+        </author>
         <edition>SAMU SRS, v. Nahshon.0.0.5</edition>
         <pubdate>2015</pubdate>
         <copyright>
@@ -323,10 +329,9 @@
                 <title>A fejlesztendő rendszer áttekintő leírása</title>
                 <para>
                     Samu szoftvere alapvetően egy csevegőprogram, amely lehetőséget ad különböző gépi tanulásos
-                    algoritmusok kipróbálására, tsztelésére, fejlesztésére. Samu szülei (gondozói) az a szűk családi kör, 
-                    amelyben a robot fejlesztése
-                    történik. A gondozók tipikusan a konzolon keresztül érintkeznek a programmal. Az egyéb felhasználók
-                    hálózaton keresztül tudnak a csevegésbe bekapcsolódni. Fontos további szempont hogy adott Samu ágensek 
+                    algoritmusok kipróbálására, tesztelésére, fejlesztésére. Samu szülei egy családi kör, 
+                    amelyben a robot fejlesztése történik. A gondozók tipikusan a konzolon keresztül érintkeznek a programmal. Az egyéb
+                    felhasználók  hálózaton keresztül tudnak a csevegésbe bekapcsolódni. Fontos további szempont hogy adott Samu ágensek 
                     tudásukat képesek legyenek egymással hálózaton keresztül megosztani, azaz kvázi egymást tanítani. Illetve 
                     Samu tudjon magában is beszélni. Samu programja legyen képes állandóan futni, ha nincs sem kozolos, sem hálózati 
                     aktivitás akkor megfelelő korpuszok olvasásával tanítsa magát, illetve önmagával folytasson dialógust!
@@ -357,7 +362,7 @@
                 <title>Követelmények</title>   
                 <para> 
                     A szokásos funkcionális és nem funkcionális követelményeken túl Samu esetén meg kell
-                    fogalmaznunk fontos szakterületi követelményeket is, hiszen a fejlesztés mögött a 
+                    fogalmaznunk fontos szakterületi követelményeket is, ugyanis a fejlesztés mögött a 
                     mély <indexterm>
                         <primary>Q-tanulás</primary> 
                     </indexterm>Q-tanulás alkalmazása és kutatása áll. A szakterületi követelmények után
@@ -372,7 +377,7 @@
                         <listitem>
                             <para>
                                 A Samut családi körben elérő gondozók (logikailag) külön csatornákat tudjanak
-                                használni, hogy Samu meg tudja különböztetni őket. A családi kör kitüntetett 
+                                használni, leginkább azért, hogy Samu meg tudja különböztetni őket. A családi kör kitüntetett
                                 gondozójától Samu fenntartások nélkül tanuljon, azaz korlátlan bizalommal legyen
                                 a szülő felé, tehát a szülői bemenetet tekintse igaznak. Legalábbis fiatal korában, 
                                 ahogyan a humán gyerekekre is ez igaz.  
@@ -525,7 +530,7 @@
                 <section>
                     <title>Felhasználói követelmények</title>   
                     <para> 
-                        A felhasználók felé Samu programja klasszikus csevgőprogramként jelenik meg.
+                        A felhasználók felé Samu programja klasszikus csevegőprogramként jelenik meg.
                     </para>            
                     <itemizedlist>
                         <listitem>
@@ -624,7 +629,20 @@
                                         <imagedata fileref="img/uc3.png" scale="55" />
                                     </imageobject>
                                     <textobject>
-                                        <phrase>A tanulás.</phrase>
+                                        <phrase>A tanulás. </phrase>
+                                    </textobject>
+                                </mediaobject>
+                            </figure>                            
+                        </para> 
+                        <para> 
+                            <figure>
+                                <title>Samu működési elve</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="img/model.png" scale="55" />
+                                    </imageobject>
+                                    <textobject>
+                                        <phrase>A tanulás folyamata.</phrase>
                                     </textobject>
                                 </mediaobject>
                             </figure>                            
